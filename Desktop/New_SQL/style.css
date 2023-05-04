@@ -1,0 +1,274 @@
+.container {
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+}
+
+#submit,#submit_1 {
+	margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(25, 93, 120);
+    color: white;
+    border-radius: 10px;
+}
+
+#submit,#submit_1:hover
+{
+    background-color: black;
+}
+
+label {
+
+    display:block;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .body_1
+  {
+    background-color: rgb(85, 2, 108);
+  }
+
+  .question
+  {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(189, 157, 188);
+    background-size: 10px;
+    
+    border-radius: 10px;
+    display:block;
+    transition: 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+  .question:hover
+  {
+    transform: scale(1.1);
+}
+
+  #reset
+  {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(25, 93, 120);
+    color: white;
+    border-radius: 10px;
+  }
+#reset:hover
+{
+    background-color: black;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+  animation: fadeInUp 1s;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heading:hover
+{
+  transform: scale(1.1);
+}
+
+   .panel, .container_1 {
+    padding: 10px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+
+  #page
+  {
+    color: black;
+  }
+
+  .pagination {
+   margin-left: 25%;
+  }
+  
+  .pagination a {
+    color: black;
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .pagination a:not(.active){
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.questionsblock
+{
+  margin-top: 100px;
+}
+
+.dialog-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dialog-box.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#show-dialog {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav_but
+{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(25, 93, 120);
+    color: white;
+    border-radius: 10px;
+}
+
+.container_1
+{
+  border-radius: 10px;
+}
+
+.panel button
+{
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 10px ;
+  width: 20%;
+
+}
+
+#message
+{
+  background-color: #ddd;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+
+/*main page*/
+.sentence-container {
+  
+  display: flex;
+  
+  text-align:center ;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  color: whitesmoke;
+
+}
+
+.sentence::after {
+  content: attr(data-text);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(30, end) forwards;
+  font-size: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .sentence {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.time-elapsed-container
+{
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  right: 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+  display: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.new-container
+{
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  display: none;
+}
+
+.new-container button
+{
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+

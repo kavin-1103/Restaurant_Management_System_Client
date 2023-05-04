@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Setiing up the title -->
+  <title>Quiz Questions</title>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <!-- bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="body_1">
+    <div style="align-content: center;" >
+        <div class="container">
+            <h1 class="heading" style="color: white;">Online Quiz</h1>
+            <h2 class="heading" style="color: azure;" id="head_title"> </h2>
+  <div id="quiz"></div>
+  <div class="time-elapsed-container">
+    <!-- container for displaying the time counter -->
+  </div>
+  
+  <!-- Action performing for toggle menu -->
+  <script>
+    $(document).ready(function(){
+      $(".container_1").click(function(){
+        $(".panel").slideToggle("slow");
+      });
+    });
+</script>
+  <br>
+  <div class="main-container">
+    <div>
+
+    </div>
+  </div>
+  <div class="but_space"> </div><br><br>
+  <!-- Toggle Menu -->
+
+  <div class="container_1 " style="cursor:pointer;  font-weight: 600;"><h5>Select the Category</h5>
+        <div class="panel ">
+          <div class="nav_but">
+          <button class="sql" >SQL</button>
+        <button class="devops">DevOps</button>
+        <button class="linux">Linux</button>
+        <button class="oops">OOPS</button>
+      </div>
+      </div>
+      
+        </div><br><br>
+        <div class="container mt-3">
+          <div id="message"></div>
+        </div>
+        <div class="new-container" >
+          <button class="btn btn-success easy1" id="easy_1">Easy</button>
+          <button class="btn btn-warning" id="medium">Medium</button>
+          <button class="btn btn-danger" id="hard">Hard</button>
+        </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
